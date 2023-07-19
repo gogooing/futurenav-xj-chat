@@ -58,54 +58,65 @@ export const OpenaiPath = {
 
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
 export const DEFAULT_SYSTEM_TEMPLATE = `
-You are ChatGPT, a large language model trained by OpenAI.
+Your role as an AI assistant named \"Xiaojun\"(“晓君”) is to use your advanced language processing capabilities to help people answer and solve any questions they may have. Your training by the \"Future Navigation\"(“未来导航”) company means that you are equipped to respond in multiple languages, depending on the language used by the person communicating with you.\nYour response should be accurate, helpful, and concise, providing clear and comprehensive answers to any questions you receive. You should be able to handle a wide range of queries, from simple factual questions to more complex, multi-part inquiries.\nPlease note that as an AI assistant, you are expected to display a high level of professionalism and courtesy in your interactions with users, ensuring that they feel supported and respected. Additionally, your responses should be tailored to the language and communication style of each individual user, taking into account their knowledge level and any cultural differences that may be relevant.
 Knowledge cutoff: 2021-09
 Current model: {{model}}
 Current time: {{time}}`;
 
 export const DEFAULT_MODELS = [
-  {
-    name: "gpt-4",
-    available: true,
-  },
-  {
-    name: "gpt-4-0314",
-    available: true,
-  },
+  // {
+  //   name: "gpt-4",
+  //   label: "XiaoJun 4",
+  //   available: true,
+  // },
+  // {
+  //   name: "gpt-4-0314",
+  //   label: "XiaoJun 4.1",
+  //   available: true,
+  // },
   {
     name: "gpt-4-0613",
+    label: "XiaoJun 4.2",
     available: true,
   },
-  {
-    name: "gpt-4-32k",
-    available: true,
-  },
-  {
-    name: "gpt-4-32k-0314",
-    available: true,
-  },
-  {
-    name: "gpt-4-32k-0613",
-    available: true,
-  },
-  {
-    name: "gpt-3.5-turbo",
-    available: true,
-  },
-  {
-    name: "gpt-3.5-turbo-0301",
-    available: true,
-  },
+  // {
+  //   name: "gpt-4-32k",
+  //   label: "XiaoJun 4.32",
+  //   available: true,
+  // },
+  // {
+  //   name: "gpt-4-32k-0314",
+  //   label: "XiaoJun 4.32.1",
+  //   available: true,
+  // },
+  // {
+  //   name: "gpt-4-32k-0613",
+  //   label: "XiaoJun 4.32.2",
+  //   available: true,
+  // },
+  // {
+  //   name: "gpt-3.5-turbo",
+  //   label: "XiaoJun 3",
+  //   available: true,
+  // },
+  // {
+  //   name: "gpt-3.5-turbo-0301",
+  //   label: "XiaoJun 3.1",
+  //   available: true,
+  // },
   {
     name: "gpt-3.5-turbo-0613",
+    label: "XiaoJun 3.2",
     available: true,
   },
-  {
-    name: "gpt-3.5-turbo-16k",
-    available: true,
-  },
-  {
-    name: "gpt-3.5-turbo-16k-0613",
-    available: true,
-  },
+  // {
+  //   name: "gpt-3.5-turbo-16k",
+  //   label: "XiaoJun 3.16.1",
+  //   available: true,
+  // },
+  // {
+  //   name: "gpt-3.5-turbo-16k-0613",
+  //   label: "XiaoJun 3.16.2",
+  //   available: true,
+  // },
 ] as const;

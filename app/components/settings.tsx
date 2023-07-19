@@ -50,7 +50,7 @@ import { getClientConfig } from "../config/client";
 import { useSyncStore } from "../store/sync";
 import { nanoid } from "nanoid";
 
-function EditPromptModal(props: { id: string; onClose: () => void }) {
+function EditPromptModal(props: { id: number; onClose: () => void }) {
   const promptStore = usePromptStore();
   const prompt = promptStore.get(props.id);
 
@@ -201,6 +201,19 @@ function UserPromptModal(props: { onClose?: () => void }) {
       )}
     </div>
   );
+}
+
+function formatVersionDate(t: string) {
+  const d = new Date(+t);
+  const year = d.getUTCFullYear();
+  const month = d.getUTCMonth() + 1;
+  const day = d.getUTCDate();
+
+  return [
+    year.toString(),
+    month.toString().padStart(2, "0"),
+    day.toString().padStart(2, "0"),
+  ].join("");
 }
 
 function DangerItems() {
@@ -435,7 +448,7 @@ export function Settings() {
             </Popover>
           </ListItem>
 
-          <ListItem
+          {/* <ListItem
             title={Locale.Settings.Update.Version(currentVersion ?? "unknown")}
             subTitle={
               checkingUpdate
@@ -458,7 +471,7 @@ export function Settings() {
                 onClick={() => checkUpdate(true)}
               />
             )}
-          </ListItem>
+          </ListItem> */}
 
           <ListItem title={Locale.Settings.SendKey}>
             <Select

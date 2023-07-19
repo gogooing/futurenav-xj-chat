@@ -4,7 +4,7 @@ import { LLMModel } from "../client/api";
 import { getClientConfig } from "../config/client";
 import { DEFAULT_INPUT_TEMPLATE, DEFAULT_MODELS, StoreKey } from "../constant";
 
-export type ModelType = (typeof DEFAULT_MODELS)[number]["name"];
+export type ModelType = (typeof DEFAULT_MODELS)[number]["label"];
 
 export enum SubmitKey {
   Enter = "Enter",
@@ -21,7 +21,7 @@ export enum Theme {
 }
 
 export const DEFAULT_CONFIG = {
-  submitKey: SubmitKey.CtrlEnter as SubmitKey,
+  submitKey: SubmitKey.Enter as SubmitKey,
   avatar: "1f603",
   fontSize: 14,
   theme: Theme.Auto as Theme,
@@ -38,7 +38,7 @@ export const DEFAULT_CONFIG = {
   models: DEFAULT_MODELS as any as LLMModel[],
 
   modelConfig: {
-    model: "gpt-3.5-turbo" as ModelType,
+    model: "XiaoJun 4" as ModelType,
     temperature: 0.5,
     top_p: 1,
     max_tokens: 2000,
@@ -78,7 +78,11 @@ export function limitNumber(
 
 export const ModalConfigValidator = {
   model(x: string) {
-    return x as ModelType;
+    // return x as ModelType;
+    return limitModel(x) as ModelType;
+  },
+  modelName(x: string) {
+    return limitModelName(x) as ModelType;
   },
   max_tokens(x: number) {
     return limitNumber(x, 0, 32000, 2000);
@@ -96,6 +100,21 @@ export const ModalConfigValidator = {
     return limitNumber(x, 0, 1, 1);
   },
 };
+
+export function limitModel(name: string) {
+  return DEFAULT_MODELS.some((m) => m.label === name && m.available)
+    ? name
+    : DEFAULT_MODELS[1].label;
+}
+
+export function limitModelName(name: string) {
+  const model = DEFAULT_MODELS.find((m) => m.label === name && m.available);
+  if (model) {
+    return model.name;
+  } else {
+    return DEFAULT_MODELS[1].name;
+  }
+}
 
 export const useAppConfig = create<ChatConfigStore>()(
   persist(

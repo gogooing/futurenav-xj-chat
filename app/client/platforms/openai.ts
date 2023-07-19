@@ -4,7 +4,12 @@ import {
   OpenaiPath,
   REQUEST_TIMEOUT_MS,
 } from "@/app/constant";
-import { useAccessStore, useAppConfig, useChatStore } from "@/app/store";
+import {
+  useAccessStore,
+  useAppConfig,
+  useChatStore,
+  ModalConfigValidator,
+} from "@/app/store";
 
 import { ChatOptions, getHeaders, LLMApi, LLMModel, LLMUsage } from "../api";
 import Locale from "../../locales";
@@ -61,7 +66,7 @@ export class ChatGPTApi implements LLMApi {
     const requestPayload = {
       messages,
       stream: options.config.stream,
-      model: modelConfig.model,
+      model: ModalConfigValidator.modelName(modelConfig.model),
       temperature: modelConfig.temperature,
       presence_penalty: modelConfig.presence_penalty,
       frequency_penalty: modelConfig.frequency_penalty,
