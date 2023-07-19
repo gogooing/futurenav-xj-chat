@@ -419,7 +419,7 @@ export function ChatActions(props: {
       config
         .allModels()
         .filter((m) => m.available)
-        .map((m) => m.name),
+        .map((m) => m.label),
     [config],
   );
   const [showModelSelector, setShowModelSelector] = useState(false);
