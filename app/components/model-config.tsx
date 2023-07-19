@@ -31,7 +31,7 @@ export function ModelConfigList(props: {
           ))}
         </Select>
       </ListItem>
-      {/* <ListItem
+      <ListItem
         title={Locale.Settings.Temperature.Title}
         subTitle={Locale.Settings.Temperature.SubTitle}
       >
@@ -49,7 +49,7 @@ export function ModelConfigList(props: {
             );
           }}
         ></InputRange>
-      </ListItem> */}
+      </ListItem>
       <ListItem
         title={Locale.Settings.TopP.Title}
         subTitle={Locale.Settings.TopP.SubTitle}
@@ -69,7 +69,7 @@ export function ModelConfigList(props: {
           }}
         ></InputRange>
       </ListItem>
-      {/* <ListItem
+      <ListItem
         title={Locale.Settings.MaxTokens.Title}
         subTitle={Locale.Settings.MaxTokens.SubTitle}
       >
@@ -87,8 +87,8 @@ export function ModelConfigList(props: {
             )
           }
         ></input>
-      </ListItem> */}
-      {/* <ListItem
+      </ListItem>
+      <ListItem
         title={Locale.Settings.PresencePenalty.Title}
         subTitle={Locale.Settings.PresencePenalty.SubTitle}
       >
@@ -107,7 +107,7 @@ export function ModelConfigList(props: {
             );
           }}
         ></InputRange>
-      </ListItem> */}
+      </ListItem>
 
       <ListItem
         title={Locale.Settings.FrequencyPenalty.Title}
@@ -160,7 +160,7 @@ export function ModelConfigList(props: {
           }
         ></input>
       </ListItem>
-      {/* <ListItem
+      <ListItem
         title={Locale.Settings.HistoryCount.Title}
         subTitle={Locale.Settings.HistoryCount.SubTitle}
       >
@@ -176,9 +176,9 @@ export function ModelConfigList(props: {
             )
           }
         ></InputRange>
-      </ListItem> */}
+      </ListItem>
 
-      {/* <ListItem
+      <ListItem
         title={Locale.Settings.CompressThreshold.Title}
         subTitle={Locale.Settings.CompressThreshold.SubTitle}
       >
@@ -195,7 +195,7 @@ export function ModelConfigList(props: {
             )
           }
         ></input>
-      </ListItem> */}
+      </ListItem>
       <ListItem title={Locale.Memory.Title} subTitle={Locale.Memory.Send}>
         <input
           type="checkbox"
