@@ -286,7 +286,7 @@ Let's begin by saying /plan [Any topic] to create a lesson plan for you.
       },
     ],
     modelConfig: {
-      model: "XiaoJun 4.2",
+      model: "XiaoJun 4",
       temperature: 0.3,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -312,7 +312,7 @@ Let's begin by saying /plan [Any topic] to create a lesson plan for you.
       },
     ],
     modelConfig: {
-      model: "XiaoJun 4.2",
+      model: "XiaoJun 4",
       temperature: 0.3,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -358,7 +358,7 @@ Let's begin by saying /plan [Any topic] to create a lesson plan for you.
       },
     ],
     modelConfig: {
-      model: "XiaoJun 4.2",
+      model: "XiaoJun 4",
       temperature: 0.5,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -384,7 +384,7 @@ Let's begin by saying /plan [Any topic] to create a lesson plan for you.
       },
     ],
     modelConfig: {
-      model: "XiaoJun 4.2",
+      model: "XiaoJun 4",
       temperature: 0.5,
       max_tokens: 2000,
       presence_penalty: 0,
@@ -416,7 +416,7 @@ Let's begin by saying /plan [Any topic] to create a lesson plan for you.
       },
     ],
     modelConfig: {
-      model: "XiaoJun 4.2",
+      model: "XiaoJun 4",
       temperature: 0.5,
       max_tokens: 2000,
       presence_penalty: 0,

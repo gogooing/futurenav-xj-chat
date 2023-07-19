@@ -64,21 +64,21 @@ Current model: {{model}}
 Current time: {{time}}`;
 
 export const DEFAULT_MODELS = [
-  // {
-  //   name: "gpt-4",
-  //   label: "XiaoJun 4",
-  //   available: true,
-  // },
+  {
+    name: "gpt-4",
+    label: "XiaoJun 4",
+    available: true,
+  },
   // {
   //   name: "gpt-4-0314",
   //   label: "XiaoJun 4.1",
   //   available: true,
   // },
-  {
-    name: "gpt-4-0613",
-    label: "XiaoJun 4.2",
-    available: true,
-  },
+  // {
+  //   name: "gpt-4-0613",
+  //   label: "XiaoJun 4.2",
+  //   available: true,
+  // },
   // {
   //   name: "gpt-4-32k",
   //   label: "XiaoJun 4.32",
