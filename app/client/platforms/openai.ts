@@ -275,8 +275,16 @@ export class ChatGPTApi implements LLMApi {
 
     return chatModels.map((m) => ({
       name: m.id,
+      label: limitModel(m.id) as string,
       available: true,
     }));
   }
 }
+
+export function limitModel(name: string) {
+  return DEFAULT_MODELS.some((m) => m.name === name && m.available)
+    ? DEFAULT_MODELS.find((m) => m.name === name && m.available)?.label
+    : DEFAULT_MODELS[1].label;
+}
+
 export { OpenaiPath };
