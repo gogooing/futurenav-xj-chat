@@ -196,7 +196,7 @@ export const DEFAULT_MODELS = [
       id: "openai",
       providerName: "OpenAI",
       providerType: "openai",
-      providerLabel: "XiaoJun 4",
+      providerLabel: "XiaoJun 4 0125",
     },
   },
   // {
@@ -209,16 +209,17 @@ export const DEFAULT_MODELS = [
   //     providerType: "openai",
   //   },
   // },
-  // {
-  //   name: "gpt-3.5-turbo",
-  //   available: true,
-  //   label: "XiaoJun 3",
-  //   provider: {
-  //     id: "openai",
-  //     providerName: "OpenAI",
-  //     providerType: "openai",
-  //   },
-  // },
+  {
+    name: "gpt-3.5-turbo",
+    available: true,
+    label: "XiaoJun 3",
+    provider: {
+      id: "openai",
+      providerName: "OpenAI",
+      providerType: "openai",
+      providerLabel: "XiaoJun 3",
+    },
+  },
   {
     name: "gpt-3.5-turbo-0125",
     available: true,
@@ -226,7 +227,7 @@ export const DEFAULT_MODELS = [
       id: "openai",
       providerName: "OpenAI",
       providerType: "openai",
-      providerLabel: "XiaoJun 3",
+      providerLabel: "XiaoJun 3 0125",
     },
   },
   // {
