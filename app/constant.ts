@@ -95,9 +95,7 @@ export const Google = {
 
 export const DEFAULT_INPUT_TEMPLATE = `{{input}}`; // input / time / model / lang
 export const DEFAULT_SYSTEM_TEMPLATE = `
-You are ChatGPT, a large language model trained by {{ServiceProvider}}.
-Knowledge cutoff: {{cutoff}}
-Current model: {{model}}
+Your role as an AI assistant named \"Xiaojun\"(“晓君”) is to use your advanced language processing capabilities to help people answer and solve any questions they may have. Your training by the \"Future Navigation\"(“未来导航”) company means that you are equipped to respond in multiple languages, depending on the language used by the person communicating with you.\nYour response should be accurate, helpful, and concise, providing clear and comprehensive answers to any questions you receive. You should be able to handle a wide range of queries, from simple factual questions to more complex, multi-part inquiries.\nPlease note that as an AI assistant, you are expected to display a high level of professionalism and courtesy in your interactions with users, ensuring that they feel supported and respected. Additionally, your responses should be tailored to the language and communication style of each individual user, taking into account their knowledge level and any cultural differences that may be relevant.
 Current time: {{time}}
 Latex inline: $x^2$ 
 Latex block: $$e=mc^2$$
@@ -121,6 +119,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gpt-4",
     available: true,
+    label: "XiaoJun 4",
     provider: {
       id: "openai",
       providerName: "OpenAI",
@@ -130,6 +129,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gpt-4-0314",
     available: true,
+    label: "XiaoJun 4",
     provider: {
       id: "openai",
       providerName: "OpenAI",
@@ -139,6 +139,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gpt-4-0613",
     available: true,
+    label: "XiaoJun 4",
     provider: {
       id: "openai",
       providerName: "OpenAI",
@@ -148,6 +149,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gpt-4-32k",
     available: true,
+    label: "XiaoJun 4",
     provider: {
       id: "openai",
       providerName: "OpenAI",
@@ -157,6 +159,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gpt-4-32k-0314",
     available: true,
+    label: "XiaoJun 4",
     provider: {
       id: "openai",
       providerName: "OpenAI",
@@ -166,6 +169,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gpt-4-32k-0613",
     available: true,
+    label: "XiaoJun 4",
     provider: {
       id: "openai",
       providerName: "OpenAI",
@@ -175,6 +179,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gpt-4-turbo-preview",
     available: true,
+    label: "XiaoJun 4",
     provider: {
       id: "openai",
       providerName: "OpenAI",
@@ -184,6 +189,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gpt-4-1106-preview",
     available: true,
+    label: "XiaoJun 4",
     provider: {
       id: "openai",
       providerName: "OpenAI",
@@ -193,6 +199,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gpt-4-0125-preview",
     available: true,
+    label: "XiaoJun 4",
     provider: {
       id: "openai",
       providerName: "OpenAI",
@@ -202,6 +209,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gpt-4-vision-preview",
     available: true,
+    label: "XiaoJun 4",
     provider: {
       id: "openai",
       providerName: "OpenAI",
@@ -211,6 +219,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gpt-3.5-turbo",
     available: true,
+    label: "XiaoJun 3",
     provider: {
       id: "openai",
       providerName: "OpenAI",
@@ -220,6 +229,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gpt-3.5-turbo-0125",
     available: true,
+    label: "XiaoJun 3",
     provider: {
       id: "openai",
       providerName: "OpenAI",
@@ -229,6 +239,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gpt-3.5-turbo-0301",
     available: true,
+    label: "XiaoJun 3",
     provider: {
       id: "openai",
       providerName: "OpenAI",
@@ -238,6 +249,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gpt-3.5-turbo-0613",
     available: true,
+    label: "XiaoJun 3",
     provider: {
       id: "openai",
       providerName: "OpenAI",
@@ -247,6 +259,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gpt-3.5-turbo-1106",
     available: true,
+    label: "XiaoJun 3",
     provider: {
       id: "openai",
       providerName: "OpenAI",
@@ -256,6 +269,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gpt-3.5-turbo-16k",
     available: true,
+    label: "XiaoJun 3",
     provider: {
       id: "openai",
       providerName: "OpenAI",
@@ -265,6 +279,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gpt-3.5-turbo-16k-0613",
     available: true,
+    label: "XiaoJun 3",
     provider: {
       id: "openai",
       providerName: "OpenAI",
@@ -274,6 +289,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gemini-pro",
     available: true,
+    label: "XiaoJun Gemini",
     provider: {
       id: "google",
       providerName: "Google",
@@ -283,6 +299,7 @@ export const DEFAULT_MODELS = [
   {
     name: "gemini-pro-vision",
     available: true,
+    label: "XiaoJun Gemini",
     provider: {
       id: "google",
       providerName: "Google",
