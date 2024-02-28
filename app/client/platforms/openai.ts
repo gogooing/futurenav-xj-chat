@@ -345,7 +345,6 @@ export class ChatGPTApi implements LLMApi {
         id: "openai",
         providerName: "OpenAI",
         providerType: "openai",
-        providerLabel:"XiaoJun"
       },
     }));
   }

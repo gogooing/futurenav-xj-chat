@@ -61,7 +61,6 @@ export interface LLMModelProvider {
   id: string;
   providerName: string;
   providerType: string;
-  providerLabel: string;
 }
 
 export abstract class LLMApi {
