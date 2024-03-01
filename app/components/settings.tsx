@@ -492,7 +492,7 @@ function SyncItems() {
   return (
     <>
       <List>
-        {/* <ListItem
+        <ListItem
           title={Locale.Settings.Sync.CloudState}
           subTitle={
             syncStore.lastProvider
@@ -526,7 +526,7 @@ function SyncItems() {
               />
             )}
           </div>
-        </ListItem> */}
+        </ListItem>
 
         <ListItem
           title={Locale.Settings.Sync.LocalState}
@@ -700,7 +700,7 @@ export function Settings() {
             </Popover>
           </ListItem>
 
-          {/* <ListItem
+          <ListItem
             title={Locale.Settings.Update.Version(currentVersion ?? "unknown")}
             subTitle={
               checkingUpdate
@@ -723,7 +723,7 @@ export function Settings() {
                 onClick={() => checkUpdate(true)}
               />
             )}
-          </ListItem> */}
+          </ListItem>
 
           <ListItem title={Locale.Settings.SendKey}>
             <Select
@@ -1150,7 +1150,7 @@ export function Settings() {
             </ListItem>
           ) : null}
 
-          {/* <ListItem
+          <ListItem
             title={Locale.Settings.Access.CustomModel.Title}
             subTitle={Locale.Settings.Access.CustomModel.SubTitle}
           >
@@ -1164,7 +1164,7 @@ export function Settings() {
                 )
               }
             ></input>
-          </ListItem> */}
+          </ListItem>
         </List>
 
         <List>
