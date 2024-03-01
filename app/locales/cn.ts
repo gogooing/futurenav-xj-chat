@@ -86,8 +86,8 @@ const cn = {
     Copy: "全部复制",
     Download: "下载文件",
     Share: "分享到 ShareGPT",
-    MessageFromYou: "来自你的消息",
-    MessageFromChatGPT: "来自 晓君 的消息",
+    MessageFromYou: "用户",
+    MessageFromChatGPT: "ChatGPT",
     Format: {
       Title: "导出格式",
       SubTitle: "可以导出 Markdown 文本或者 PNG 图片",
@@ -144,7 +144,7 @@ const cn = {
       },
     },
     Lang: {
-      Name: "语言", // ATTENTION: if you wanna add a new translation, please do not translate this value, leave it as `Language`
+      Name: "Language", // ATTENTION: if you wanna add a new translation, please do not translate this value, leave it as `Language`
       All: "所有语言",
     },
     Avatar: "头像",

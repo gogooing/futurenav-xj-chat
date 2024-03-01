@@ -71,9 +71,9 @@ export const ALL_LANG_OPTIONS: Record<Lang, string> = {
 };
 
 const LANG_KEY = "lang";
-const DEFAULT_LANG = "cn";
+const DEFAULT_LANG = "en";
 
-const fallbackLang = cn;
+const fallbackLang = en;
 const targetLang = ALL_LANGS[getLang()] as LocaleType;
 
 // if target lang missing some fields, it will use fallback lang string
